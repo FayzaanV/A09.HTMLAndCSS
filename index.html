@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name = "author" content = "Fayzaan Virk">
+    <link rel="stylesheet" href="style.css">
+    <title>AVL Trees</title>
+</head>
+<body>
+    <h1>All about AVL Trees!</h1>
+    <h2>What is an AVL tree?</h2>
+    <p class="info">An AVL Tree is a self-balancing binary search tree. The self-balancing feature helps ensure the best case run time for search algorithms.</p>
+    <h2>How does it balance itself?</h2>
+    <p class="info">It uses an extra data field called the balance factor. For each node, the balance factor is the height of the node's left subtree minus the height of the node's right subtree.</p>
+    <h2>How does it work?</h2>
+    <ol>
+        <li>First, a node is inserted like any other binary search tree</li>
+        <li>Then, the tree checks the balance factor on all nodes on the path from the newly inserted node to the parent</li>
+        <li id="last">If any have a balance factor less than -1 or greater than 1, the node will be rotated away from the imbalance</li>
+    </ol>
+    <h2>What do they look like?</h2>
+    <img src="AVLTree.png">
+    <h2>They sound really cool! I'd love to see one in action!</h2>
+    <p>Check out this <a href="https://www.cs.usfca.edu/~galles/visualization/AVLtree.html">animation</a>! It shows insertion, deletion, and searching!</p>
+</body>
